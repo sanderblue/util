@@ -1,11 +1,10 @@
 # Util
 **A set of Javascript utility objects.**
-<br>
 
 - [HttpRequest](#HttpRequest)
 - [DataBind](#DataBind)
 
-<br><br>
+<br>
 
 <a name="HttpRequest"></a>
 
@@ -21,7 +20,7 @@ var req = new HttpRequest('GET', 'http://sanderblue.lcl/test', function(data) {
 req.send();
 
 ```
-<br><br>
+<br>
 
 <a name="DataBind"></a>
 
@@ -34,9 +33,10 @@ Once a new DataBind object is created, you need to listen on events in order to 
 ```javascript
 var targetElement = document.getElementById('test');
 var ctrlElement = document.getElementById('ctrl');
+var dataToDisplay = 'Auto-Update Worked!!';
 
-// Create the "data-binding"
-var element = new DataBind(targetElement, ctrlElement, '0', '/test');
+// Create the "data-binding" with a test URL*
+var element = new DataBind(targetElement, ctrlElement, 'No Data Yet', 'http://www.sanderblue.com/test/' + dataToDisplay);
 
 element.listen({
     event: 'click',
@@ -44,3 +44,4 @@ element.listen({
 });
 
 ```
+<sup>*Note: The example endpoint is CORS compliant. Your controllers method(s) will probably work differently.</sup>
