@@ -10,7 +10,7 @@
 
 #### HttpRequest Module
 HttpRequest is a wrapper for Javascript's [XMLHttpRequest](https://developer.mozilla.org/en-US/docs/Web/API/XMLHttpRequest) object.<br>
-<sup>[Code](https://github.com/sanderblue/util/blob/master/HttpRequest.js)</sup>
+<sup>[View Code](https://github.com/sanderblue/util/blob/master/HttpRequest.js)</sup>
 
 **Usage**
 ```javascript
@@ -29,7 +29,7 @@ req.send();
 DataBind is a minimalist "data binding" module with no dependencies. This is not necessarily a true data-binding setup - it's more of a DOM auto-update module. The DataBind constructor requires a target element, controller element, an initial value, and URL endpoint. The URL endpoint *must* accept GET requests in order to update the target element's inner HTML. The ability to use additional HTTP verbs will be added soon.
 
 Once a new DataBind object is created, you need to listen on events in order to auto-update the UI. To do this, the object's `listen()` method accepts an options object containing two properties - 'event' and 'update'. If no event is provided in the options, it defaults to 'click'. If no update option is provided, no auto-updating of the UI will occur. Additional event handling will be added soon.<br>
-<sup>[Code](https://github.com/sanderblue/util/blob/master/DataBind.js)</sup>
+<sup>[View Code](https://github.com/sanderblue/util/blob/master/DataBind.js)</sup>
 
 **Usage**
 ```javascript
