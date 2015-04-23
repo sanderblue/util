@@ -14,7 +14,7 @@ HttpRequest is a wrapper for Javascript's [XMLHttpRequest](https://developer.moz
 
 **Usage**
 ```javascript
-var req = new HttpRequest('GET', 'http://sanderblue.lcl/test', function(data) {
+var req = new HttpRequest('GET', 'http://sanderblue.lcl/test/testing', function(data) {
     console.log('Response came back!', data);
 });
 
