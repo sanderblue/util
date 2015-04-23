@@ -1,5 +1,29 @@
 # Util
-A set of Javascript utility objects.
+**A set of Javascript utility objects.**
+<br>
+
+- [HttpRequest](#HttpRequest)
+- [DataBind](#DataBind)
+
+<br><br>
+
+<a name="HttpRequest"></a>
+
+#### HttpRequest Module
+HttpRequest is a wrapper for Javascript's native **XMLHttpRequest** object.
+
+**Usage**
+```javascript
+var req = new HttpRequest('GET', 'http://sanderblue.lcl/test', function(data) {
+    console.log('Response came back!', data);
+});
+
+req.send();
+
+```
+<br><br>
+
+<a name="DataBind"></a>
 
 #### DataBind Module
 DataBind is a minimalist "data binding" module with no dependencies. This is not necessarily a true data-binding setup - it's more of a DOM auto-update module. The DataBind constructor requires a target element, controller element, an initial value, and URL endpoint. The URL endpoint *must* accept GET requests in order to update the target element's inner HTML. The ability to use additional HTTP verbs will be added eventually.
